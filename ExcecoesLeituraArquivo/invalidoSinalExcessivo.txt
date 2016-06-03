@@ -1,0 +1,3 @@
+nome->->Lucas
+sobrenome->->->Rodrigues
+idade->->->->22
