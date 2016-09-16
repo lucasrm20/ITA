@@ -1,0 +1,15 @@
+<dataset>
+	<usuario login="lucas" email="lucas@lucas.com" nome="Lucas Rodrigues" senha="12345" pontos="20" />
+	<usuario login="fulano" email="fulano@fulano.com" nome="Fulano de Tal" senha="12345" pontos="60" />
+	<usuario login="joao" email="joao@joao.com" nome="João" senha="12345" pontos="30" />
+	
+	<topico id_topico="1" titulo="Tópico 01" conteudo="Este é o conteudo do tópico 01" login="lucas" />
+	<topico id_topico="2" titulo="Tópico 02" conteudo="Este é o conteudo do tópico 02" login="joao" />
+	<topico id_topico="3" titulo="Tópico 03" conteudo="Este é o conteudo do tópico 03" login="lucas" />
+	<topico id_topico="4" titulo="Tópico 04" conteudo="Este é o conteudo do tópico 01" login="fulano" />
+	
+	<comentario id_comentario="1" comentario="Este é o comentario 01" login="fulano" id_topico="1" />
+	<comentario id_comentario="2" comentario="Este é o comentario 02" login="joao" id_topico="1" />
+	<comentario id_comentario="3" comentario="Este é o comentario 03" login="lucas" id_topico="2" />
+	<comentario id_comentario="4" comentario="Este é o comentario 04" login="lucas" id_topico="4" />
+</dataset>

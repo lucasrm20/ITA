@@ -1,0 +1,7 @@
+<dataset>
+	<comentario id_comentario="1" comentario="Este é o comentario 01" login="fulano" id_topico="1" />
+	<comentario id_comentario="2" comentario="Este é o comentario 02" login="joao" id_topico="1" />
+	<comentario id_comentario="3" comentario="Este é o comentario 03" login="lucas" id_topico="2" />
+	<comentario id_comentario="4" comentario="Este é o comentario 04" login="lucas" id_topico="4" />
+	<comentario id_comentario="5" comentario="Novo Comentario" login="joao" id_topico="1" />
+</dataset>

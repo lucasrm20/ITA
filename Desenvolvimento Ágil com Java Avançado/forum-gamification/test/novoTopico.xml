@@ -1,0 +1,7 @@
+<dataset>
+	<topico id_topico="1" titulo="Tópico 01" conteudo="Este é o conteudo do tópico 01" login="lucas" />
+	<topico id_topico="2" titulo="Tópico 02" conteudo="Este é o conteudo do tópico 02" login="joao" />
+	<topico id_topico="3" titulo="Tópico 03" conteudo="Este é o conteudo do tópico 03" login="lucas" />
+	<topico id_topico="4" titulo="Tópico 04" conteudo="Este é o conteudo do tópico 01" login="fulano" />
+	<topico id_topico="5" titulo="Novo Topico" conteudo="Conteudo do Novo Topico" login="lucas" />
+</dataset>
