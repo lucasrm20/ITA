@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Esse Eu Já Li</title>
+	
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+	<link rel="stylesheet" href="resources/css/site.css">
+</head>
+
+<body ng-app="esseeujali">
+	
+	<menu-principal></menu-principal>
+
+	<div ng-view></div>
+	
+	<rodape></rodape>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.5.8/angular-resource.min.js"></script>
+	
+	<script src="resources/js/main.js"></script>
+	
+	<script src="resources/js/directives.js"></script>
+	
+	<script src="resources/js/services/AuthService.js"></script>
+	<script src="resources/js/services/LivroService.js"></script>
+	<script src="resources/js/services/AuthInterceptorService.js"></script>
+	<script src="resources/js/services/UsuarioService.js"></script>
+	<script src="resources/js/services/RankingService.js"></script>
+	<script src="resources/js/services/MarcarLeituraService.js"></script>
+	
+	<script src="resources/js/controllers/LoginController.js"></script>
+	<script src="resources/js/controllers/LivrosController.js"></script>
+	<script src="resources/js/controllers/MenuController.js"></script>
+	<script src="resources/js/controllers/PontuacaoTrofeuController.js"></script>
+	<script src="resources/js/controllers/RankingController.js"></script>
+	<script src="resources/js/controllers/LivroController.js"></script>
+</body>
+</html> 

@@ -1,0 +1,28 @@
+body {
+	padding-top: 50px;
+}
+
+.navbar-inverse .navbar-brand {
+	font-family: 'Anton', sans-serif;
+	font-size: 2em;
+	color: #FFF;
+	text-shadow: 2px 2px 2px #000;
+}
+
+footer i {
+	color: #333;
+}
+
+footer i:hover {
+	color: #265a88;
+}
+
+.footer-content {
+	padding: 40px 0 10px;
+}
+
+footer hr {
+	margin-top: 10px;
+	max-width: 100px;
+	border-top: 2px solid #333;
+}

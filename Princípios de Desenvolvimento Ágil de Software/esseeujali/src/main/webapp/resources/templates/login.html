@@ -1,0 +1,46 @@
+<div class="container">
+	<div class="row">
+		
+		<div class="col-xs-4 col-xs-offset-4">
+			<h1 class="text-center">Login</h1>
+			<hr>
+			
+			<div class="alert alert-dismissible alert-danger" role="alert" ng-show="message">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				{{message.message}}
+			</div>
+			
+			<form ng-submit="logar()">
+			
+				<div class="form-group">
+					<div class="input-group margin-bottom-sm">
+						<span class="input-group-addon">
+							<i class="fa fa-search fa-user" aria-hidden="true"></i>
+						</span>
+					
+						<input type="text" class="form-control input-lg" ng-model="login.usuario" placeholder="Login" required>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group margin-bottom-sm">
+						<span class="input-group-addon">
+							<i class="fa fa-search fa-password" aria-hidden="true"></i>
+						</span>
+					
+						<input type="password" class="form-control input-lg" ng-model="login.senha" placeholder="Senha" required>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-lg" ng-disabled="isSubmitting">
+						<i class="fa fa-sign-in"></i> Login
+					</button>
+				</div>
+			</form>
+		</div>
+	
+	</div>
+</div>

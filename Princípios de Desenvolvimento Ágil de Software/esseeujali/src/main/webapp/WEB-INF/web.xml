@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<servlet>
+		<servlet-name>br.com.esseeujali.services.ApplicationJAXRS</servlet-name>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>br.com.esseeujali.services.ApplicationJAXRS</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+	
+	<filter-mapping>
+		<filter-name>entityManagerFilter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authFilter</filter-name>
+		<url-pattern>/api/livros/*</url-pattern>
+		<url-pattern>/api/usuario/*</url-pattern>
+		<url-pattern>/api/ranking/*</url-pattern>
+	</filter-mapping>
+
+</web-app>

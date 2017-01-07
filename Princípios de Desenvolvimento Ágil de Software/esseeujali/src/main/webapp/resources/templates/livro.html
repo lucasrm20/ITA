@@ -1,0 +1,40 @@
+<div class="container">
+	<div class="row">
+		
+		<div class="col-xs-6 col-xs-offset-3">
+			<h1 class="text-center">{{livro.titulo}}</h1>
+			<hr>
+			
+			<figure class="col-xs-6">
+				<img ng-src="{{livro.capa}}" alt="{{livro.titulo}}" class="img-thumbnail img-responsive">
+		 	</figure>
+		 	
+		 	<div class="col-xs-6">
+				<dl>
+					<dt>Titulo</dt>
+					<dd>{{livro.titulo}}</dd>
+
+					<dt>Autor</dt>
+					<dd>{{livro.autor}}</dd>
+					
+					<dt>Categoria</dt>
+					<dd>{{livro.categoria}}</dd>
+
+					<dt>Páginas</dt>
+					<dd>{{livro.paginas}}</dd>
+				</dl>
+				
+				<a class="btn btn-primary" ng-click="marcarLeitura()" ng-disabled="processandoLeitura" ng-hide="isLivroLido">
+					<i class="fa fa-check" aria-hidden="true"></i> 
+					{{processandoLeitura ? 'Processando' : 'Marcar Como Lido'}}
+				</a>
+				
+				<a class="btn btn-primary" ng-disabled="{{true}}" ng-show="isLivroLido">
+					<i class="fa fa-check" aria-hidden="true"></i> 
+					Você Já Leu Este Livro
+				</a>
+			</div>
+		</div>
+	
+	</div>
+</div>

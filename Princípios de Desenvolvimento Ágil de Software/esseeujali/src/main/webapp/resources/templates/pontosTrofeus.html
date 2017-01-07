@@ -1,0 +1,66 @@
+<div class="container">
+	<div class="row">
+		
+		<div class="col-xs-4 col-xs-offset-4">
+			<h1 class="text-center">Pontuação e Troféus</h1>
+			<hr>
+			
+			<dl class="text-center">
+				<dt>Usuário</dt>
+				<dd>{{usuario.usuario}}</dd>
+
+				<dt>Pontuação Total</dt>
+				<dd>
+					<span class="badge">{{usuario.pontuacao}} Pontos</span>
+				</dd>
+				
+				<dt>Troféus</dt>
+				<dd>
+					<span ng-hide="usuario.trofeus">
+						Você ainda não ganhou nenhum troféu!
+					</span>
+					
+					<ul class="list-inline" ng-show="usuario.trofeus">
+						<li ng-repeat="trofeu in usuario.trofeus">
+							<span class="label label-primary">
+								<i class="fa fa-trophy" aria-hidden="true"></i> Leitor de {{trofeu}}
+							</span>
+						</li>
+					</ul>
+				</dd>
+
+			</dl>
+			
+			<h3 class="text-center">Livros Lidos</h3>
+			
+			<p ng-hide="usuario.livrosLidos" class="text-center">
+				Você ainda não leu nenhum livro!
+			</p>
+			
+			<table class="table table-striped table-bordered" ng-show="usuario.livrosLidos">
+				<colgroup>
+					<col class="col-xs-10">
+					<col class="col-xs-2">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Livro</th>
+						<th></th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr ng-repeat="livro in usuario.livrosLidos">
+						<td>{{livro.titulo}}</td>
+						<td>
+							<a ng-href="#/livros/{{livro.id}}" class="btn btn-primary btn-sm">
+								<i class="fa fa-external-link" aria-hidden="true"></i> Visualizar Livro
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+</div>
